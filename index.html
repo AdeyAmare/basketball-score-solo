@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont">
+
+            <h3 class="header" id="home-header">HOME</h3>
+            <div class="score-cont">
+                <p class="score" id="home"> 0 </p>
+            </div>
+
+            <div class="score-btns">
+                <button class="small-btn" onclick='addPoints("home",1)'>+1</button>
+                <button class="small-btn" onclick='addPoints("home",2)'>+2</button>
+                <button class="small-btn" onclick='addPoints("home",3)'>+3</button>
+            </div>
+        </div>
+
+        <div class="cont">
+            <h3 class="header" id="guest-header">GUEST</h3>
+            <div class="score-cont">
+                <p class="score" id="guest"> 0 </p>
+
+            </div>
+            <div class="score-btns">
+                <button class="small-btn" onclick='addPoints("guest",1)'>+1</button>
+                <button class="small-btn" onclick='addPoints("guest",2)'>+2</button>
+                <button class="small-btn" onclick='addPoints("guest",3)'>+3</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="new-game">
+        <button class="game-btn" onclick="newGame()">NEW GAME </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
